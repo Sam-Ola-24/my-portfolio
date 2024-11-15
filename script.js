@@ -64,7 +64,7 @@ function thirdImage() {
     ctx.drawImage(img, 0, 0, 300, 150);
   });
 
-  img.src = "./images/blog.png";
+  img.src = "./images/webStorage.png";
 }
 
 thirdImage();
