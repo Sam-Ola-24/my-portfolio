@@ -1,10 +1,12 @@
 const expand = document.getElementsByClassName("more");
-var i;
+const less = document.getElementsByClassName("less");
+
+let i;
 
 for (i = 0; i < expand.length; i++) {
   expand[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var details = this.nextElementSibling;
+    let details = this.nextElementSibling;
     if (details.style.display === "block") {
       details.style.display = "none";
     } else {

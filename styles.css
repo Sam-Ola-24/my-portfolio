@@ -64,17 +64,15 @@ section {
     border: none;
     background-color: #f4f4f4;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .details {
     display: none;
     padding: 20px 40px;
-    background-color: #ccc;
-}
-
-.active,
-.details:hover {
-    background-color: #ccc;
+    background-color: #000;
+    color: white;
 }
 
 
