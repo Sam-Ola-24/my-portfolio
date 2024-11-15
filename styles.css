@@ -53,8 +53,61 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.list span {
+
+    margin: 0 0 40px 0;
+}
+
+
+.more {
+    font-size: 14px;
+    border: none;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.details {
+    display: none;
+    padding: 20px 40px;
+    background-color: #ccc;
+}
+
+.active,
+.details:hover {
+    background-color: #ccc;
+}
+
+
 h2 {
     color: #333;
+}
+
+form {
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+input {
+    margin-left: 30px;
+    padding: 2px 2px;
+}
+
+textarea {
+    margin-left: 130px;
+    padding: 2px 2px;
+}
+
+label.firstname,
+label.lastname {
+    margin-right: 24px;
+}
+
+label.email {
+    margin-right: 0px;
+}
+
+#contact {
+    margin-bottom: 150px;
 }
 
 /* Media Queries for Mobile Devices */
