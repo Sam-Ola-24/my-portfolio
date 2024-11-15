@@ -29,3 +29,81 @@ function validateForm() {
     document.getElementById("error").innerHTML = submitError;
   }
 }
+
+function firstImage() {
+  const ctx = document.getElementById("canvas").getContext("2d");
+  const img = new Image();
+
+  img.addEventListener("load", () => {
+    ctx.drawImage(img, 0, 0, 300, 150);
+  });
+
+  img.src = "./images/portfolio.png";
+}
+
+firstImage();
+
+function secondImage() {
+  const ctx = document.getElementById("css").getContext("2d");
+  const img = new Image();
+
+  img.addEventListener("load", () => {
+    ctx.drawImage(img, 0, 0, 300, 150);
+  });
+
+  img.src = "./images/css.png";
+}
+
+secondImage();
+
+function thirdImage() {
+  const ctx = document.getElementById("blog").getContext("2d");
+  const img = new Image();
+
+  img.addEventListener("load", () => {
+    ctx.drawImage(img, 0, 0, 300, 150);
+  });
+
+  img.src = "./images/blog.png";
+}
+
+thirdImage();
+
+function fourthImage() {
+  const ctx = document.getElementById("lab").getContext("2d");
+  const img = new Image();
+
+  img.addEventListener("load", () => {
+    ctx.drawImage(img, 0, 0, 300, 150);
+  });
+
+  img.src = "./images/lab.png";
+}
+
+fourthImage();
+
+function fifthImage() {
+  const ctx = document.getElementById("port").getContext("2d");
+  const img = new Image();
+
+  img.addEventListener("load", () => {
+    ctx.drawImage(img, 0, 0, 300, 150);
+  });
+
+  img.src = "./images/pportfolio.png";
+}
+
+fifthImage();
+
+function sixthImage() {
+  const ctx = document.getElementById("assign").getContext("2d");
+  const img = new Image();
+
+  img.addEventListener("load", () => {
+    ctx.drawImage(img, 0, 0, 300, 150);
+  });
+
+  img.src = "./images/code.png";
+}
+
+sixthImage();
