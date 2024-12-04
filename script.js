@@ -1,6 +1,7 @@
 const expand = document.getElementsByClassName("more");
 const submit = document.getElementById("submit-btn");
 const toggleThemeButton = document.getElementById("toggleTheme");
+
 toggleThemeButton.addEventListener("click", function () {
   document.body.classList.toggle("dark-mode");
 });
