@@ -9,7 +9,8 @@
     <script src="script.js" defer></script>
 </head>
 
-<body>
+<body class="body">
+    
     <!-- Header Section -->
     <header>
         <h1>Akinola, Oluwaseun</h1>
@@ -23,6 +24,7 @@
     </header>
 
     <!-- About Section -->
+    <button id="toggleTheme">Switch to Dark Mode</button>
     <section id="about">
         <h2 class="about">About Me</h2>
         <p>
@@ -31,15 +33,20 @@
             in the Computer Programming diploma program at Humber College, to gain more knowledge and insight to the world of computer programming.
 
             <br><br>
-            I have over 5 years of experience in IT, working as <span>Technical Support Analyst</span>, <span>Quality Assurance Engineer</span>, <span>Systems Analyst</span>, and more. </p>
+            I have over 5 years of experience in IT, working as <span>Technical Support Analyst</span>, <span>Quality Assurance Engineer</span>, <span>Systems Analyst</span>, and more. <br><br>
+       <span class="skills"> Skills: HTML/CSS &nbsp;|&nbsp; Javascript&nbsp;|&nbsp;SQL&nbsp;|&nbsp;API integration Basics&nbsp;|&nbsp;JAVA Basics&nbsp</span>
+        </p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>My Projects</h2>
+        <h2>My Projects</h2><br>
+        Filter projects based on these topics : <button class="filter-btn" data-category="javascript">JavaScript</button>
+        &nbsp;&nbsp;<button class="filter-btn" data-category="html-css">HTML/CSS</button>&nbsp; <a class="filter-btn" href="index.html">Clear Filter</a><br><br>
+
         <div class="list">
           
-            <Span class="projects"><strong>Dynamic-Blog-Website</strong><br>
+            <Span class="projects" data-category="javascript"><strong>Dynamic-Blog-Website</strong><br>
                 For this exercise, I am creating a blog website with a homepage that displays a list of blog posts, a
                 page to create new posts, and the ability to edit or delete existing posts. This project will be managed
                 through Git and GitHub with proper version control workflows.<br><br>
@@ -53,12 +60,13 @@
                     ratione culpa animi, nihil quia recusandae. Aspernatur, quam. Delectus dolorum tempore accusamus
                     veritatis libero non consequatur, doloremque vitae iure debitis explicabo animi mollitia molestias
                     nam repudiandae nesciunt autem quae tempora, quasi illum sed voluptates in! Voluptatem quidem unde
-                    suscipit numquam modi rerum! Ex, saepe.<br>
+                    suscipit numquam modi rerum! Ex, saepe.<br><br>
+                     <a class="github-pages" href="https://sam-ola-24.github.io/dynamic-blog-website/" target="_blank">Click here to view!</a>
                 </p>
             </Span><br><br>
        
 
-            <Span class="projects"><strong>CSS Fundamentals</strong><br>
+            <Span class="projects" data-category="html-css"><strong>CSS Fundamentals</strong><br>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus soluta dolorum iste mollitia quo
                 voluptate voluptatum magni beatae excepturi dolore!<br><br>
                 <button class="more">Click here to read more</button>
@@ -71,11 +79,12 @@
                     ratione culpa animi, nihil quia recusandae. Aspernatur, quam. Delectus dolorum tempore accusamus
                     veritatis libero non consequatur, doloremque vitae iure debitis explicabo animi mollitia molestias
                     nam repudiandae nesciunt autem quae tempora, quasi illum sed voluptates in! Voluptatem quidem unde
-                    suscipit numquam modi rerum! Ex, saepe.<br>
+                    suscipit numquam modi rerum! Ex, saepe.<br><br>
+                    <a class="github-pages" href="https://sam-ola-24.github.io/CSS-Fundamentals-Styling-Layout/" target="-blank">Click here to view!</a>
                 </p>
             </Span><br><br>
 
-            <span class="projects"><strong>Web Storage</strong><br>
+            <span class="projects" data-category="javascript"><strong>Web Storage</strong><br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla provident in accusantium facere quisquam
                 expedita consequatur incidunt praesentium fugiat enim.<br><br>
                 <button type="button" class="more">Click here to read more</button>
@@ -88,13 +97,14 @@
                     ratione culpa animi, nihil quia recusandae. Aspernatur, quam. Delectus dolorum tempore accusamus
                     veritatis libero non consequatur, doloremque vitae iure debitis explicabo animi mollitia molestias
                     nam repudiandae nesciunt autem quae tempora, quasi illum sed voluptates in! Voluptatem quidem unde
-                    suscipit numquam modi rerum! Ex, saepe.<br>
+                    suscipit numquam modi rerum! Ex, saepe.<br><br>
+                    <a class="github-pages" href="https://sam-ola-24.github.io/CSS-Fundamentals-Styling-Layout/" target="-blank">Click here to view!</a>
                 </p>
             </span><br><br>
 
         </div>
         <div class="list">
-            <span class="projects"><strong>Labs</strong><br>
+            <span class="projects" data-category="html-css"><strong>Labs</strong><br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ipsam, sequi exercitationem laudantium ad
                 omnis modi quibusdam qui voluptate vel.<br><br>
                 <button class="more">Click here to read more</button>
@@ -107,11 +117,13 @@
                     ratione culpa animi, nihil quia recusandae. Aspernatur, quam. Delectus dolorum tempore accusamus
                     veritatis libero non consequatur, doloremque vitae iure debitis explicabo animi mollitia molestias
                     nam repudiandae nesciunt autem quae tempora, quasi illum sed voluptates in! Voluptatem quidem unde
-                    suscipit numquam modi rerum! Ex, saepe.<br>
+                    suscipit numquam modi rerum! Ex, saepe.<br><br>
+                    <a class="github-pages" href="https://sam-ola-24.github.io/Lab4_Introduction-to-Functions/" target="-blank">Click here to view!</a>
+                    
                 </p>
             </span><br><br>
 
-            <Span class="projects"><strong>My-Portfolio</strong>
+            <Span class="projects" data-category="javascript"><strong>My-Portfolio</strong>
                 <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem nemo iste corporis suscipit ut
                 incidunt fugit explicabo at tempora.<br><br>
                 <button class="more">Click here to read more</button>
@@ -124,11 +136,12 @@
                     ratione culpa animi, nihil quia recusandae. Aspernatur, quam. Delectus dolorum tempore accusamus
                     veritatis libero non consequatur, doloremque vitae iure debitis explicabo animi mollitia molestias
                     nam repudiandae nesciunt autem quae tempora, quasi illum sed voluptates in! Voluptatem quidem unde
-                    suscipit numquam modi rerum! Ex, saepe.<br>
+                    suscipit numquam modi rerum! Ex, saepe.<br><br>
+                    <a class="github-pages" href="https://sam-ola-24.github.io/CSS-Fundamentals-Styling-Layout/" target="-blank">Click here to view!</a>
                 </p>
             </Span><br><br>
 
-            <span class="projects"><strong>Assignments</strong>
+            <span class="projects" data-category="html-css"><strong>Assignments</strong>
                 <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, sit dolores at illo ut ratione
                 natus voluptas earum aperiam sunt?<br><br>
                 <button class="more">Click here to read more</button>
@@ -141,7 +154,8 @@
                     ratione culpa animi, nihil quia recusandae. Aspernatur, quam. Delectus dolorum tempore accusamus
                     veritatis libero non consequatur, doloremque vitae iure debitis explicabo animi mollitia molestias
                     nam repudiandae nesciunt autem quae tempora, quasi illum sed voluptates in! Voluptatem quidem unde
-                    suscipit numquam modi rerum! Ex, saepe.<br>
+                    suscipit numquam modi rerum! Ex, saepe.<br><br>
+                    <a class="github-pages" href="https://sam-ola-24.github.io/interactive-quiz/" target="-blank">Click here to view!</a>
                 </p>
             </span><br><br>
         </div>
