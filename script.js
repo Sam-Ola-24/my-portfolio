@@ -1,8 +1,39 @@
 const expand = document.getElementsByClassName("more");
 const submit = document.getElementById("submit-btn");
 
-submitError = "All fields are required *";
-submit.addEventListener("click", validateForm);
+//----implemented the dark-mode button functionality here
+
+const toggleThemeButton = document.getElementById("toggleTheme");
+toggleThemeButton.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+});
+
+//----implemented the filter button functionality and added the option to clear filters
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const projects = document.querySelectorAll(".projects");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    for (i = 0; i < filterButtons.length; i++) {
+      filterButtons[i].classList.remove("button-active");
+    }
+    this.classList.add("button-active");
+    const category = this.getAttribute("data-category");
+    projects.forEach((project) => {
+      if (
+        project.getAttribute("data-category") === category ||
+        category === "all"
+      ) {
+        project.style.display = "block";
+      } else {
+        project.style.display = "none";
+      }
+    });
+  });
+});
+
+//----implemented the read more button functionality here and text changes when in 'read-more' mode
 
 let i;
 
@@ -12,13 +43,19 @@ for (i = 0; i < expand.length; i++) {
     let details = this.nextElementSibling;
     if (details.style.display === "block") {
       details.style.display = "none";
+      this.innerHTML = "Click here to read more";
     } else {
       details.style.display = "block";
+      this.innerHTML = "Click to close this section";
     }
   });
 }
 
-//To execute form submission
+//To execute form validation
+
+submitError = "All fields are required *";
+submit.addEventListener("click", validateForm);
+
 function validateForm() {
   if (
     !document.getElementById("firstname").value ||
@@ -29,6 +66,8 @@ function validateForm() {
     document.getElementById("error").innerHTML = submitError;
   }
 }
+
+//-----implemented canvas images for html page
 
 function firstImage() {
   const ctx = document.getElementById("canvas").getContext("2d");
